@@ -92,7 +92,7 @@ function Services() {
       <div className="services-beaches">
         <div className="slider">
           <span>
-            <div className="left-arrow-wrapper" onClick={nextSlideBeach}>
+            <div className="left-arrow-wrapper" onClick={prevSlideBeach}>
               <i className="fas fa-angle-left left-arrow"></i>
             </div>
             <div className="right-arrow-wrapper" onClick={nextSlideBeach}>
