@@ -89,7 +89,7 @@ function Services() {
       </div>
 
       {/* Beaches and Islands */}
-      {/* <div className="services-beaches">
+      <div className="services-beaches">
         <div className="slider">
           <span>
             <div className="left-arrow-wrapper" onClick={nextSlideBeach}>
@@ -132,7 +132,7 @@ function Services() {
             <li>Swimming</li>
           </ul>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
