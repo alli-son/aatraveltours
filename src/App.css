@@ -55,7 +55,8 @@
 
 /* Mountains */
 .services-mountain,
-.services-beaches {
+.services-beaches,
+.services-tourist {
   display: flex;
   width: 90%;
   max-width: 1300px;
@@ -67,37 +68,43 @@
 }
 
 .services-mountain-text,
-.services-beaches-text {
+.services-beaches-text,
+.services-tourist-text {
   padding-bottom: 50px;
 }
 
 .services-mountain h2,
-.services-beaches h2 {
+.services-beaches h2,
+.services-tourist h2 {
   font-family: Karla, sans-serif;
   font-size: 40px;
   color: #2d3691;
 }
 
 .services-mountain p,
-.services-beaches p {
+.services-beaches p,
+.services-tourist p {
   margin-top: 25px;
   font-size: 18px;
   color: #6c6c6c;
 }
 
 .services-mountain ul,
-.services-beaches ul {
+.services-beaches ul,
+.services-tourist ul {
   margin-top: 25px;
 }
 
 .services-mountain ul li,
-.services-beaches ul li {
+.services-beaches ul li,
+.services-tourist ul li {
   font-size: 20px;
   padding: 15px 0;
 }
 
 /* Beaches and Islands */
-.services-beaches {
+.services-beaches,
+.services-tourist {
   margin-top: 200px;
 }
 

@@ -2,12 +2,15 @@ import React, { useState } from "react";
 import "../../App.css";
 import { MountainImg } from "../mountainimg";
 import { BeachImg } from "../beachimg";
+import { TouristImg } from "../touristimg";
 
 function Services() {
   const [current, setCurrent] = useState(0);
   const length = MountainImg.length;
   const [currentBeach, setCurrentBeach] = useState(0);
   const lengthBeach = BeachImg.length;
+  const [currentTourist, setCurrentTourist] = useState(0);
+  const lengthTourist = TouristImg.length;
 
   // Mountain slider
   const nextSlide = () => {
@@ -25,6 +28,19 @@ function Services() {
 
   const prevSlideBeach = () => {
     setCurrentBeach(currentBeach === 0 ? lengthBeach - 1 : currentBeach - 1);
+  };
+
+  // Tourist Spots slider
+  const nextSlideTourist = () => {
+    setCurrentTourist(
+      currentTourist === lengthTourist - 1 ? 0 : currentTourist + 1
+    );
+  };
+
+  const prevSlideTourist = () => {
+    setCurrentTourist(
+      currentTourist === 0 ? lengthTourist - 1 : currentTourist - 1
+    );
   };
 
   // if (!Array.isArray(MountainImg) || MountainImg.length <= 0) {
@@ -135,40 +151,44 @@ function Services() {
       </div>
 
       {/* Tourist spots */}
-      <div className="services-mountain">
-        <div className="services-mountain-text">
+      <div className="services-tourist">
+        <div className="services-tourist-text">
           <h2>Tourist Spots</h2>
           <p>
-            Quisque fringilla, ligula eget ultricies tempor, eros enim
-            sollicitudin neque, et malesuada ligula velit at elit.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Consequuntur doloremque quidem animi iure provident quia harum,
+            praesentium voluptatibus ullam aperiam laborum nostrum quasi odio
+            eaque, vero quis, quos atque. Impedit.
           </p>
           <ul>
-            <li>Hiking</li>
-            <li>Trekking</li>
-            <li>Climbing</li>
+            <li>Scenery</li>
+            <li>Cityscape</li>
+            <li>Memories</li>
           </ul>
         </div>
         <div className="slider">
           <span>
-            <div className="left-arrow-wrapper" onClick={prevSlide}>
+            <div className="left-arrow-wrapper" onClick={prevSlideTourist}>
               <i className="fas fa-angle-left left-arrow"></i>
             </div>
-            <div className="right-arrow-wrapper" onClick={nextSlide}>
+            <div className="right-arrow-wrapper" onClick={nextSlideTourist}>
               <i className="fas fa-angle-right right-arrow"></i>
             </div>
           </span>
           <div>
-            {MountainImg.map((mount, index) => {
+            {TouristImg.map((tourist, index) => {
               return (
                 <div
                   key={index}
-                  className={index === current ? "slide active" : "slide"}
+                  className={
+                    index === currentTourist ? "slide active" : "slide"
+                  }
                 >
-                  {index === current && (
-                    <img src={mount.image} alt="Mountain" />
+                  {index === currentTourist && (
+                    <img src={tourist.image} alt="Mountain" />
                   )}
-                  {index === current ? (
-                    <p className="tagline">{mount.text}</p>
+                  {index === currentTourist ? (
+                    <p className="tagline">{tourist.text}</p>
                   ) : (
                     ""
                   )}
@@ -176,6 +196,27 @@ function Services() {
               );
             })}
           </div>
+          {/* <div>
+            {TouristImg.map((tourist, index) => {
+              return (
+                <div
+                  key={index}
+                  className={
+                    index === currentTourist ? "slide active" : "slide"
+                  }
+                >
+                  {index === currentTourist && (
+                    <img src={tourist.image} alt="Tourist Spots" />
+                  )}
+                  {index === currentTourist ? (
+                    <p className="tagline">{tourist.text}</p>
+                  ) : (
+                    ""
+                  )}
+                </div>
+              );
+            })}
+          </div> */}
         </div>
       </div>
     </>
