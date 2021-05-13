@@ -196,27 +196,51 @@ function Services() {
               );
             })}
           </div>
-          {/* <div>
-            {TouristImg.map((tourist, index) => {
-              return (
-                <div
-                  key={index}
-                  className={
-                    index === currentTourist ? "slide active" : "slide"
-                  }
-                >
-                  {index === currentTourist && (
-                    <img src={tourist.image} alt="Tourist Spots" />
-                  )}
-                  {index === currentTourist ? (
-                    <p className="tagline">{tourist.text}</p>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              );
-            })}
-          </div> */}
+        </div>
+      </div>
+
+      {/* Testimonials */}
+
+      <div className="testimonials">
+        <div className="overlay"></div>
+        <div className="testimonials-wrapper">
+          <div className="testimonials-content">
+            <h2>Testimonials</h2>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque
+                perferendis reprehenderit sequi aperiam voluptatibus alias
+                necessitatibus cumque praesentium doloribus hic.
+              </p>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <p>- John Doe</p>
+            </div>
+            <div>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                facilis odio laboriosam ipsa maxime at?
+              </p>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star"></i>
+              <p>- Jane Smith</p>
+            </div>
+            <div>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <i className="fa fa-star checked"></i>
+              <p>- Peter White</p>
+            </div>
+          </div>
         </div>
       </div>
     </>
