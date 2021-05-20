@@ -104,96 +104,8 @@ function Services() {
         </div>
       </div>
 
-      <div className="services-mountain">
-        <div className="services-mountain-text">
-          <h2>Mountains</h2>
-          <p>
-            Quisque fringilla, ligula eget ultricies tempor, eros enim
-            sollicitudin neque, et malesuada ligula velit at elit.
-          </p>
-          <ul>
-            <li>Hiking</li>
-            <li>Trekking</li>
-            <li>Climbing</li>
-          </ul>
-        </div>
-        <div className="slider">
-          <span>
-            <div className="left-arrow-wrapper" onClick={prevSlide}>
-              <i className="fas fa-angle-left left-arrow"></i>
-            </div>
-            <div className="right-arrow-wrapper" onClick={nextSlide}>
-              <i className="fas fa-angle-right right-arrow"></i>
-            </div>
-          </span>
-          <div>
-            {MountainImg.map((mount, index) => {
-              return (
-                <div
-                  key={index}
-                  className={index === current ? "slide active" : "slide"}
-                >
-                  {index === current && (
-                    <img src={mount.image} alt="Mountain" />
-                  )}
-                  {index === current ? (
-                    <p className="tagline">{mount.text}</p>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      <div className="services-mountain">
-        <div className="services-mountain-text">
-          <h2>Mountains</h2>
-          <p>
-            Quisque fringilla, ligula eget ultricies tempor, eros enim
-            sollicitudin neque, et malesuada ligula velit at elit.
-          </p>
-          <ul>
-            <li>Hiking</li>
-            <li>Trekking</li>
-            <li>Climbing</li>
-          </ul>
-        </div>
-        <div className="slider">
-          <span>
-            <div className="left-arrow-wrapper" onClick={prevSlide}>
-              <i className="fas fa-angle-left left-arrow"></i>
-            </div>
-            <div className="right-arrow-wrapper" onClick={nextSlide}>
-              <i className="fas fa-angle-right right-arrow"></i>
-            </div>
-          </span>
-          <div>
-            {MountainImg.map((mount, index) => {
-              return (
-                <div
-                  key={index}
-                  className={index === current ? "slide active" : "slide"}
-                >
-                  {index === current && (
-                    <img src={mount.image} alt="Mountain" />
-                  )}
-                  {index === current ? (
-                    <p className="tagline">{mount.text}</p>
-                  ) : (
-                    ""
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
       {/* Beaches and Islands */}
-      {/* <div className="services-beaches">
+      <div className="services-beaches">
         <div className="slider">
           <div>
             <span>
@@ -236,10 +148,10 @@ function Services() {
             <li>Swimming</li>
           </ul>
         </div>
-      </div> */}
+      </div>
 
       {/* Tourist spots */}
-      {/* <div className="services-tourist">
+      <div className="services-tourist">
         <div className="services-tourist-text">
           <h2>Tourist Spots</h2>
           <p>
@@ -285,7 +197,7 @@ function Services() {
             })}
           </div>
         </div>
-      </div> */}
+      </div>
 
       {/* Testimonials */}
       <div className="testimonials">
