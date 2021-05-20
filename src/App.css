@@ -265,6 +265,10 @@
 
 @media screen and (max-width: 1200px) {
   .services-mountain,
+<<<<<<< HEAD
+=======
+  .services-beaches,
+>>>>>>> 9c7942624556f5d1e99aec1225dbce9496e0a86e
   .services-tourist {
     flex-direction: column;
   }
