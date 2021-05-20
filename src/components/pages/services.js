@@ -74,15 +74,15 @@ function Services() {
           </ul>
         </div>
         <div className="slider">
-          <span>
-            <div className="left-arrow-wrapper" onClick={prevSlide}>
-              <i className="fas fa-angle-left left-arrow"></i>
-            </div>
-            <div className="right-arrow-wrapper" onClick={nextSlide}>
-              <i className="fas fa-angle-right right-arrow"></i>
-            </div>
-          </span>
           <div>
+            <span>
+              <div className="left-arrow-wrapper" onClick={prevSlide}>
+                <i className="fas fa-angle-left left-arrow"></i>
+              </div>
+              <div className="right-arrow-wrapper" onClick={nextSlide}>
+                <i className="fas fa-angle-right right-arrow"></i>
+              </div>
+            </span>
             {MountainImg.map((mount, index) => {
               return (
                 <div
@@ -107,15 +107,15 @@ function Services() {
       {/* Beaches and Islands */}
       <div className="services-beaches">
         <div className="slider">
-          <span>
-            <div className="left-arrow-wrapper" onClick={prevSlideBeach}>
-              <i className="fas fa-angle-left left-arrow"></i>
-            </div>
-            <div className="right-arrow-wrapper" onClick={nextSlideBeach}>
-              <i className="fas fa-angle-right right-arrow"></i>
-            </div>
-          </span>
           <div>
+            <span>
+              <div className="left-arrow-wrapper" onClick={prevSlideBeach}>
+                <i className="fas fa-angle-left left-arrow"></i>
+              </div>
+              <div className="right-arrow-wrapper" onClick={nextSlideBeach}>
+                <i className="fas fa-angle-right right-arrow"></i>
+              </div>
+            </span>
             {BeachImg.map((beach, index) => {
               return (
                 <div
@@ -167,15 +167,15 @@ function Services() {
           </ul>
         </div>
         <div className="slider">
-          <span>
-            <div className="left-arrow-wrapper" onClick={prevSlideTourist}>
-              <i className="fas fa-angle-left left-arrow"></i>
-            </div>
-            <div className="right-arrow-wrapper" onClick={nextSlideTourist}>
-              <i className="fas fa-angle-right right-arrow"></i>
-            </div>
-          </span>
           <div>
+            <span>
+              <div className="left-arrow-wrapper" onClick={prevSlideTourist}>
+                <i className="fas fa-angle-left left-arrow"></i>
+              </div>
+              <div className="right-arrow-wrapper" onClick={nextSlideTourist}>
+                <i className="fas fa-angle-right right-arrow"></i>
+              </div>
+            </span>
             {TouristImg.map((tourist, index) => {
               return (
                 <div

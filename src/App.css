@@ -108,6 +108,12 @@
   margin-top: 200px;
 }
 
+/* .services-beaches-text,
+.services-tourist-text {
+  padding-left: 80px;
+  padding-right: 80px;
+} */
+
 .testimonials {
   background-image: url("./images//testi_bg.jpeg");
   background-position: center;
@@ -243,7 +249,7 @@
 }
 
 .tagline {
-  width: 50%;
+  width: 450px;
   margin: 5px auto;
 }
 
@@ -258,8 +264,13 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .services-mountain {
+  .services-mountain,
+  .services-tourist {
     flex-direction: column;
+  }
+
+  .services-beaches {
+    flex-direction: column-reverse;
   }
 }
 
@@ -300,5 +311,9 @@
   .slider img {
     width: 210px;
     height: 260px;
+  }
+
+  .tagline {
+    width: 210px;
   }
 }
