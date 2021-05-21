@@ -158,7 +158,29 @@
   background-size: fill;
   background-repeat: no-repeat;
   color: #fff; */
-  font-size: 100px;
+  font-size: 32px;
+  color: #2d3691;
+}
+
+.contact-container {
+  width: 90%;
+  max-width: 1300px;
+  margin-top: 100px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contact-wrapper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-wrapper h1 {
+  width: 30%;
+}
+
+.contact-wrapper div {
+  width: 70%;
 }
 
 .sign-up {
