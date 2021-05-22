@@ -7,14 +7,14 @@ function ContactUs() {
     <>
       <div className="contact-container">
         <div className="contact-wrapper">
-          <h1 className="contactus">Contact Us</h1>
-          <div>
+          <h1 className="contactus">Contact</h1>
+          <div className="contact-details">
             <p>
               Book your weekend getaway with us and avail our exciting promos!
               Feel free to talk with us from our details below.
             </p>
             <ul>
-              <li>Contacts:</li>
+              <li>Get in Touch</li>
               <li>Tel. #: 1234-567-890</li>
               <li>Mobile #: 0987-654-321</li>
               <li>Email: aanda@gmail.com</li>
@@ -65,8 +65,7 @@ function ContactUs() {
             <div>
               <img
                 src="https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjB8fG9mZmljZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60"
-                width="800"
-                height="600"
+                alt="Contact Us"
               />
             </div>
           </div>
