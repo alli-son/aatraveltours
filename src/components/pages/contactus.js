@@ -22,6 +22,7 @@ function ContactUs() {
             <ul>
               <li>You can also connect with us through our socials!</li>
               <li>
+                <span className="fab fa-facebook-f"></span>
                 <Link
                   to={{ pathname: "https://www.facebook.com" }}
                   target="_blank"
@@ -30,6 +31,7 @@ function ContactUs() {
                 </Link>
               </li>
               <li>
+                <span className="fab fa-instagram"></span>
                 <Link
                   to={{ pathname: "https://www.instagram.com" }}
                   target="_blank"
@@ -38,6 +40,7 @@ function ContactUs() {
                 </Link>
               </li>
               <li>
+                <span className="fab fa-youtube"></span>
                 <Link
                   to={{ pathname: "https://www.youtube.com" }}
                   target="_blank"
@@ -46,6 +49,7 @@ function ContactUs() {
                 </Link>
               </li>
               <li>
+                <span className="fab fa-twitter"></span>
                 <Link
                   to={{ pathname: "https://www.twitter.com" }}
                   target="_blank"
@@ -54,6 +58,7 @@ function ContactUs() {
                 </Link>
               </li>
               <li>
+                <span className="fab fa-linkedin"></span>
                 <Link
                   to={{ pathname: "https://www.linkedin.com" }}
                   target="_blank"

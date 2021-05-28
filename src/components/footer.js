@@ -43,9 +43,9 @@ function footer() {
           <div className="footer-link-items">
             <h2>Contact Us</h2>
             <Link to="/contactus">Contact</Link>
-            <Link to="/contactus">Support</Link>
-            <Link to="/contactus">Destinations</Link>
-            <Link to="/contactus">Sponsorships</Link>
+            <Link to="/contactus">Phone Number</Link>
+            <Link to="/contactus">Email</Link>
+            <Link to="/contactus">Socials</Link>
           </div>
         </div>
         <div className="footer-link-wrapper">

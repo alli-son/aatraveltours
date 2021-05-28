@@ -165,9 +165,7 @@
 .contact-container {
   width: 90%;
   max-width: 1300px;
-  margin-top: 100px;
-  margin-right: auto;
-  margin-left: auto;
+  margin: 50px auto;
 }
 
 .contact-wrapper {
@@ -195,13 +193,101 @@
   height: 600px;
 }
 
+.contact-details span {
+  color: #6c6c6c;
+}
+
+.contact-details a {
+  margin-left: 10px;
+  text-decoration: none;
+}
+
 .sign-up {
-  background-image: url("./images/img-3.jpg");
+  /* background-image: url("./images/img-3.jpg");
   background-position: center;
   background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
+  background-repeat: no-repeat; */
+  color: #2d3691;
   font-size: 100px;
+}
+
+.packages-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 50px auto;
+}
+
+.packages-container h2 {
+  color: #064589;
+}
+
+.packages-container h3 {
+  color: rgba(114, 147, 182, 0.7);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.packages-details-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 30px;
+}
+
+.packages-details-container > * {
+  width: inherit;
+  padding-bottom: 10px;
+  background-color: #f6f6f6;
+  border-bottom: 3px solid #e2e2e2;
+  border-radius: 10px;
+  margin: 20px 20px 20px 0px;
+}
+
+.packages-details-container img {
+  width: 100%;
+}
+
+.packages-details {
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.packages-details p {
+  color: #064589;
+  font-size: 28px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.packages-details div {
+  margin-top: 15px;
+}
+
+.packages-details h4 {
+  color: #747878;
+  font-size: 20px;
+}
+
+.packages-details ul {
+  margin-left: 30px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+.packages-details ul li {
+  list-style: disc;
+  color: #888;
+  padding: 5px;
+}
+
+.packages-details a {
+  border: 1px solid #064589;
+  border-radius: 15px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.packages-details a:hover {
+  color: #fff;
+  background-color: #064589;
 }
 
 .overlay {
@@ -306,6 +392,10 @@
   .services-beaches {
     flex-direction: column-reverse;
   }
+
+  .packages-details-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -315,6 +405,10 @@
 
   .services-tagline p {
     font-size: 50px;
+  }
+
+  .packages-details-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
 
