@@ -27,11 +27,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <Link
-          to="/aatraveltours"
-          className="navbar-logo"
-          onClick={closeMobileMenu}
-        >
+        <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
           A&A Travel and Tours<i className="fab fa-typo3"></i>
         </Link>
         <div className="menu-icon" onClick={handClick}>
@@ -39,11 +35,7 @@ function Navbar() {
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
           <li className="nav-item">
-            <Link
-              to="/aatravelandtours"
-              className="nav-links"
-              onClick={closeMobileMenu}
-            >
+            <Link to="/" className="nav-links" onClick={closeMobileMenu}>
               Home
             </Link>
           </li>
